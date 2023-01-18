@@ -8,3 +8,6 @@ QuickDM offers various features for Dungeon Masters, such as:
 * A customizable "health bar" for your boss battles.
 
 QuickDM is a simple and fast solution that offers a customizable environment for busy DMs, and will soon be hosted on GitHub Pages!
+
+
+TEMPORARY NOTE: I don't have too much time to work in this project, so I'm testing some little things I need to learn before I can deliver a proper work.

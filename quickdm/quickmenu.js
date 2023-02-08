@@ -1,9 +1,4 @@
-const menuContainer = document.getElementById("menu-container");
+const toggleBtn = document.querySelector(".toggle-button");
+const dashboardMenu = document.querySelector("#menu-container");
 
-function openMenu() {
-  menuContainer.classList.add("open");
-}
-
-function closeMenu() {
-  menuContainer.classList.remove("open");
-}
+toggleBtn.addEventListener("click", function () { dashboardMenu.classList.toggle("open"); });

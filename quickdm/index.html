@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="style.css">
     <title>QuickDM Notes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id = main>
-        <div id = header>
-            <header> <h1 class = header_title> QuickDM </h1> </header>
-            <textarea class = textbox rows="10" cols="50" placeholder="Write your notes here..."> </textarea>
-        </div>
-
-        <div id = "menu-container">
+    <main>
+        <header>
+            <h1 class="header_title">QuickDM</h1>
+        </header>
+        <section>
+            <textarea class="textbox" rows="10" cols="50" placeholder="Write your notes here..."></textarea>
             <button class="toggle-button">☰</button>
+        </section>
+        <aside id="menu-container">
+            <div class="menu-header">
+                <h2>Menu</h2>
+                <button class="toggle-button"></button>
+            </div>
             <ul class="menu-items">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 2</a></li>
                 <li><a href="#">Item 3</a></li>
-
             </ul>
-        </div>
+        </aside>
         <script src="quickmenu.js"></script>
-    </div>4
+    </main>
 </body>
 </html>

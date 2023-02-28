@@ -19,15 +19,31 @@
         <aside id="menu-container">
             <div class="menu-header">
                 <h2>Menu</h2>
-                <button class="toggle-button"></button>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
+                <li>    
+                    <a href="#">Roll Dices </a>
+                    <article class="dice">
+                        <button class="dice-button">test</button>
+                    </article>
+                </li>
+                <li>
+                    <a href="#">Health Bar</a>
+                        <div class="hp-bar">
+                            <div class="hp-bar-fill"></div>
+                          </div>
+                          
+                          <form>
+                            <label for="hp">Enter the HP value:</label>
+                            <input type="number" id="hp" name="hp">
+                            <button type="submit">Update HP</button>
+                          </form>
+                </li>
+                <li><a href="#">Options</a></li>
             </ul>
         </aside>
         <script src="quickmenu.js"></script>
+        <script src="health.js"></script>
     </main>
 </body>
 </html>

@@ -7,29 +7,21 @@
     <title>QuickDM Notes</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-        <header>
-            <h1 class="header_title">QuickDM</h1>
-        </header>
-        <section>
-            <textarea class="textbox" rows="10" cols="50" placeholder="Write your notes here..."></textarea>
-            <button class="toggle-button">☰</button>
-        </section>
-        <aside id="menu-container">
-            <div class="menu-header">
-                <h2>Menu</h2>
-            </div>
-            <ul class="menu-items">
-                <li>    
-                    <a href="#">Roll Dices </a>
-                    <article class="dice">
-                        <button class="dice-button">test</button>
-                    </article>
-                </li>
-                <li>
-                    <a href="#">Health Bar</a>
-                        <div class="hp-bar">
+<body> 
+ <header> 
+
+   <div class="menu-header">
+                     
+     <ul class="menu-items">
+      <li>    
+        <a href="#">Roll Dices </a>
+         <!--<article class="dice">
+          <button class="dice-button">test</button>
+           </article>-->
+            </li>
+              <li>
+                <a href="#">Health Bar</a>
+                       <!-- <div class="hp-bar">
                             <div class="hp-bar-fill"></div>
                           </div>
                           
@@ -37,13 +29,24 @@
                             <label for="hp">Enter the HP value:</label>
                             <input type="number" id="hp" name="hp">
                             <button type="submit">Update HP</button>
-                          </form>
+                          </form>-->
                 </li>
                 <li><a href="#">Options</a></li>
-            </ul>
+            </ul> </div>
+        </header>
+    <main>
+       
+        <div class="textbox">
+            <textarea class="text-words" rows="27" cols="67" placeholder="Write your notes here..."></textarea>
+            <input id ="save" class="save-button three" type="button" value='Save'>
+            <script src="textsave.js"></script>
+        </div>
+        <aside id="menu-container">
+           
         </aside>
         <script src="quickmenu.js"></script>
         <script src="health.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
     </main>
 </body>
 </html>

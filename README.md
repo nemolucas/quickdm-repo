@@ -3,11 +3,13 @@ Quick Dungeon Master (QuickDM for short) is a website that allows you to take si
 
 QuickDM offers various features for Dungeon Masters, such as:
 * A textbox for making notes;
-* A menu with numerous dices for rolling your dice;
-* A calculator and a simple turn counter;
-* A customizable "health bar" for your boss battles.
+* A menu with numerous dices for your rolls;
+* A customizable "character health bar editor" for your battles.
 
 QuickDM is a simple and fast solution that offers a customizable environment for busy DMs, and will soon be hosted on GitHub Pages!
 
 
-TEMPORARY NOTE: Currently getting help from Sarmentoneto!
+Special thanks to:
+(Sarmento Neto)[https://github.com/Sarmentoneto] for the coding guidance and general help;
+(Menezes)[https://instagram.com/design_menezes?igshid=YmMyMTA2M2Y=] for the logo and icon designs;
+random_guy68 for the feedbacks.

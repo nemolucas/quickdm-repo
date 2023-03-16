@@ -8,45 +8,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
- <header> 
-
-   <div class="menu-header">
-                     
-     <ul class="menu-items">
-      <li>    
-        <a href="#">Roll Dices </a>
-         <!--<article class="dice">
-          <button class="dice-button">test</button>
-           </article>-->
-            </li>
-              <li>
-                <a href="#">Health Bar</a>
-                       <!-- <div class="hp-bar">
-                            <div class="hp-bar-fill"></div>
-                          </div>
-                          
-                          <form>
-                            <label for="hp">Enter the HP value:</label>
-                            <input type="number" id="hp" name="hp">
-                            <button type="submit">Update HP</button>
-                          </form>-->
-                </li>
-                <li><a href="#">Options</a></li>
-            </ul> </div>
-        </header>
+  <header class="navbar"> 
+   <button class="btn-navbar"> <img src="assets/RPG Logo_Prancheta 1.png" alt=""></button>
+    <button class="btn-navbar2">test</button>
+    
+  </header>
     <main>
        
-        <div class="textbox">
-            <textarea class="text-words" rows="27" cols="67" placeholder="Write your notes here..."></textarea>
-            <input id ="save" class="save-button three" type="button" value='Save'>
-            <script src="textsave.js"></script>
+        <div class="text-container">
+         <form>  
+          <textarea id="textbox" rows="20" cols="50" placeholder="Write your notes here..."></textarea>
+            <button class="save-button three" type="submit" onclick="saveAndDownload()">Save</button>
+            </form>
         </div>
-        <aside id="menu-container">
-           
-        </aside>
-        <script src="quickmenu.js"></script>
-        <script src="health.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-    </main>
+ <div class="menu">  
+  <ul class="menu-items">
+ 
+     <button class="accordion">Roll Dices</button>
+      <div class="panel">
+       <div class="dice">
+       <button class="d6">d6</button>
+       <button class="d8">d8</button>
+       <button class="d12">d12</button > 
+       <button class="d20">d20</button > 
+       </div>
+        </div>
+      
+         <button class="accordion">Character Editor</button>
+        <div class="panel">
+          <div class="hp-bar">
+             <div class="hp-bar-fill"></div>
+                </div>
+                <form>
+                <label for="hp">Enter the HP value:</label>
+                <input type="number" id="hp" name="hp">
+              <button type="submit">Update HP</button>
+            </form>
+      </div>
+     <button class="accordion">About</button>
+    <div class="panel">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic est, dolorum dolores amet quasi esse animi repellat sit delectus ducimus placeat quas natus nihil aut ad. Ut, quae doloribus?</p>
+    
+      
+            
+   </div> 
+  <script src="textsave.js"></script>
+  <script src="quickmenu.js"></script>
+  <script src="health.js"></script>
+  </main>
 </body>
 </html>

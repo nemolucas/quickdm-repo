@@ -10,6 +10,6 @@ QuickDM is a simple and fast solution that offers a customizable environment for
 
 
 ## Special thanks to:
-* (Sarmento Neto)[https://github.com/Sarmentoneto] for the coding guidance and general help;
-* (Menezes)[https://instagram.com/design_menezes?igshid=YmMyMTA2M2Y=] for the logo and icon designs;
+* [Sarmento Neto](https://github.com/Sarmentoneto) for the coding guidance and general help;
+* [Menezes](https://instagram.com/design_menezes?igshid=YmMyMTA2M2Y=) for the logo and icon designs;
 * random_guy68 for the feedbacks.

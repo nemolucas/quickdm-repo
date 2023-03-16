@@ -1,30 +1,72 @@
-/* Geral */
+
 body {
   overflow-x: auto;
   font-size: 15px;
   background-color: #2c2c3f;
+  margin: 0;
 }
 
 
-
-/* Cabeçalho */
 .header_title {
   text-align: center;
-  
   border-radius: 5px;
   background-color: blueviolet;
-} 
-.textbox {
+  }
+  
+  .navbar {
+    
+  background-color: blueviolet;
+  padding:5px;
+  display: flex; 
+  align-items: center; 
+  }
+  
+  .navbar img {
+    margin-left: 15px; 
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn-navbar img {
+    margin-left: 15px; 
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn-navbar{
+    background-color: none;
+  }
+  
+  .btn-navbar2 {
+    position: absolute;
+    margin-left: 95%; 
+  }
+  
+  .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: all 0.3s ease; 
+  }
+  
+  .navbar a:hover {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1); 
+  }
+
+
+.text-container {
 margin-top: 120px;  
 text-align: center;
 
 }
 
-.text-words {
+#textbox {
   border: 4px solid black;
   border-radius: 10px;
   position:relative;
   background-color: #cbcbe2fb;
+  resize: none;
 }
 .save-button{ 
   text-align: center;
@@ -42,10 +84,10 @@ text-align: center;
   text-transform: uppercase;
   font-weight: 700;
 }
-.save-button:hover, .save-button:focus{
+.save-button:hover {
     color: blueviolet;
     outline: 0;
-  
+    text-decoration: none;
 }
 .three {
   border-color: blueviolet;
@@ -58,88 +100,48 @@ text-align: center;
   box-shadow: 0 0 10px 0 blueviolet inset, 0 0 10px 4px blueviolet;
 }
 
-.menu-header {
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -8px;
-  margin-bottom: 30px;
+.accordion {
   background-color: blueviolet;
-  border-radius: 20px;
-  font-size: 20px;
-  text-align: center;
-
-  
- }
-
- ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: blueviolet;
-}
-
-li {
-  
-  height: 40px;
-  float: left;
-}
-
-li a {
-  display: flex;
-  color: rgb(77, 10, 139);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-/* Barra Lateral */
-aside {
-  position: fixed;
-  position: hidden;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 200px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-aside.open {
-  position: visible;
-  transform: translateX(0%);
-}
-
-/* Botão Menu */
-.toggle-button {
-  position: absolute;
-  top: 60px;
-  right: 210px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 5px;
-  color: #000000;
-  font-size: 35px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.toggle-button:hover {
-  color: #333;
-  background-color: #eee ;
+  color: #2c2c3f;
+  text-transform: uppercase;
   cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+
+
+}
+.active, .accordion:hover {
+  background-color: rgba(131, 57, 201, 0.825);
+  font-size: 15px;
 }
 
-/* Itens do Menu */
+.active, .accordion {
+  transform: scaleY(1);
+  transform-origin: top;
+ 
+}
+
+.panel {
+  padding: 50px 18px;
+  transition: transform 0.4s ease;
+  background-color: #cbcbe2fb;
+  display: none;
+  overflow: hidden;
+}
+
+.dice{
+  text-align: center;
+}
+
+
 .menu-items {
   padding: 10px;
 }
